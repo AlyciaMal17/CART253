@@ -1,14 +1,10 @@
 # Alycia Mal's ***CART253***
 This is Alycia Malonga’s coursework 2026 repository for CART253
 ![My florida trip](/assets/image/IMG_1150.jpeg)
-<<<<<<< HEAD
 ** <p>This website will explore and present my prototyping work as a begginer in coding language for course CART235 </p> **
  <p> Here are useful websites to use as a cheatsheet; </p>
-=======
-## <p>This website will explore and present my prototyping work as a begginer in coding language for course CART235
-### </p> Here are useful websites to use as a cheatsheet; 
->>>>>>> e23c56c770afef9b93c1f175ad9a54bc0cdfbdec
-To answer any questions about Markdown here is the [Guide](https://www.markdownguide.org/tools/vscode/)
+ <p>This website will explore and present my prototyping work as a begginer in coding language for course CART235
+ </p> 
 
 Here you will find my comments on how I've progressed throughout the week with my [Coding Journal](Journal.md)
 
