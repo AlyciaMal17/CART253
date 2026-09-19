@@ -2,7 +2,7 @@
  * Prototype Project 1
  * Alycia Malonga
  * 
- * Working on the three prototype projects for the first assignment in the course.
+ * Working on one of the three prototype projects for the first assignment in the course.
  * Prototype 1 example; The fish
  */
 
