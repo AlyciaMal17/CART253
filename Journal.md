@@ -13,5 +13,5 @@
 <p>The hardest part was definitely the coordinate math, especially making sure everything lined up properly when I resized things.</p>
 <p>I hope people looking at my work can see how much personality you can create with simple shapes. I’d like to develop the minion more by making its eyes follow the mouse or making it “breathe.”</p>
 <p> Here are the prototypes; 
-Gerald the ![PurpleFishPrototype.jpeg](/assets/image/Prototype%20Images/PurpleFishPrototype.jpeg)
+Gerald the[PurpleFishPrototype.jpeg](/assets/image/Prototype%20Images/PurpleFishPrototype.jpeg)
 
