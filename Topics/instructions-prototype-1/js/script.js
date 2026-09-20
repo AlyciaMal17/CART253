@@ -3,6 +3,7 @@
  * Alycia Malonga
  * 
  * Working on one of the three prototype projects for the first assignment in the course.
+ * Here you will find my comments on how I've progressed throughout this project with my [Coding Journal](Journal.md)
  * Prototype 1 example; The fish
  */
 
