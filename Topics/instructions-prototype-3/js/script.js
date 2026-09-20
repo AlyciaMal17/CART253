@@ -3,7 +3,7 @@
  * Alycia Malonga
  * 
  * Working on the third of the three prototype projects for the first assignment in the course.
- * Prototype 3 example; Absteact Minion
+ * Prototype 3 example; Abstract Minion
  */
 
 "use strict";
