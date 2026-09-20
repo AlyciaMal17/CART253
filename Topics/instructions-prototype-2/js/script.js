@@ -3,7 +3,7 @@
  * Alycia Malonga
  * 
  * Working on two of the three prototype projects for the first assignment in the course.
- * Prototype 2 example; The Ice Cream
+ * Prototype 2 example; The Ice Cream Cone
  */
 
 "use strict";
