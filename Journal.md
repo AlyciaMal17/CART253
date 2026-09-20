@@ -13,8 +13,11 @@
 <p>The hardest part was definitely the coordinate math, especially making sure everything lined up properly when I resized things.</p>
 <p>I hope people looking at my work can see how much personality you can create with simple shapes. I’d like to develop the minion more by making its eyes follow the mouse or making it “breathe.”</p>
 <p> Here are the prototypes; 
-Prototype #1: ![Gerald the fish](/assets/image/Prototypeimages/PurpleFishPrototype.jpeg) </p>
+Prototype #1: 
+![Gerald the fish](/assets/image/Prototypeimages/PurpleFishPrototype.jpeg)</p>
 
-<p>Prototype #2: ![The Ice Cream Cone](/assets/image/Prototypeimages/IceCreamPrototype.jpeg)</p>
+<p>Prototype #2: 
+![The Ice Cream Cone](/assets/image/Prototypeimages/IceCreamPrototype.jpeg)</p>
 
-<p>Prototype #3: ![Bob The Minion](/assets/image/Prototypeimages/BobTheMinionPrototype.jpeg)</p>
+<p>Prototype #3: 
+![Bob The Minion](/assets/image/Prototypeimages/BobTheMinionPrototype.jpeg)</p>
