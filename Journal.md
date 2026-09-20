@@ -15,10 +15,10 @@
 
 <p> Here are the prototypes; 
 Prototype #1: 
-![Gerald the fish](/assets/image/Prototypeimages/PurpleFishPrototype.jpeg)</p>
+![Gerald the fish](/assets/image/PurpleFishPrototype.jpeg)</p>
 
 <p>Prototype #2: 
-![The Ice Cream Cone](/assets/image/Prototypeimages/IceCreamPrototype.jpeg)</p>
+![The Ice Cream Cone](/assets/image/IceCreamPrototype.jpeg)</p>
 
 <p>Prototype #3: 
-![Bob The Minion](/assets/image/Prototypeimages/BobTheMinionPrototype.jpeg)</p>
+![Bob The Minion](/assets/image/BobTheMinionPrototype.jpeg)</p>
