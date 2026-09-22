@@ -13,6 +13,7 @@ This is just a static drawing of an ice cream cone with three scoops, made out o
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
+> - Here you will find my comments on how I've progressed throughout this project with my [Coding Journal](Journal.md)
 
 
 ## License
