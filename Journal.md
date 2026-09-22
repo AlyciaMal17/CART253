@@ -15,7 +15,7 @@
 
 <p> Here are the prototypes; 
 Prototype #1: 
-![Gerald the fish](CART253.code-workspace/assets/image/PurpleFishPrototype.jpeg)</p>
+![Gerald the fish](./assets/image/PurpleFishPrototype.jpeg)</p>
 
 <p>Prototype #2: 
 ![The Ice Cream Cone](./assets/image/IceCreamPrototype.jpeg)</p>
