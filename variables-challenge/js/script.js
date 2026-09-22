@@ -10,9 +10,14 @@
 // Our friend Mr. Furious
 let mrFurious = {
   // Position and size
-x : 200,
-y : 200,
-size: 100,
+  x: 200,
+  y: 200,
+  size: 100,
+  minX: -2,
+  maxX: 2,
+  minY: -2,
+  maxY: 2,
+  anger: 0,
 
   // Colour
   fill: {
@@ -23,19 +28,19 @@ size: 100,
 };
 
 let sky = {
-    // color of the sky
-    fill: {
-        r: 160,
-        g: 180,
-        b: 200,
-    }
+  // color of the sky
+  fill: {
+    r: 160,
+    g: 180,
+    b: 200,
+  }
 }
 
 let bird = {
-    // Position 
+  // Position 
   x: 10,
   y: 200
-  
+
 }
 
 /**
@@ -49,36 +54,39 @@ function setup() {
  * Draw (and update) Mr. Furious
  */
 function draw() {
-background(sky.fill.r, sky.fill.g, sky.fill.b);
+  background(sky.fill.r, sky.fill.g, sky.fill.b);
 
-// Update Mr. Furious's colour to be more red over time
-mrFurious.fill.g = mrFurious.fill.g - 1;
-mrFurious.fill.b = mrFurious.fill.b - 1;
+  // Update Mr. Furious's colour to be more red over time
+  mrFurious.fill.g = mrFurious.fill.g - 1;
+  mrFurious.fill.b = mrFurious.fill.b - 1;
 
-// Update sky color to be more darker over time
-sky.fill.r = sky.fill.r - 10;
-sky.fill.g = sky.fill.g - 10;
-sky.fill.b = sky.fill.b - 10;
+  // Update sky color to be more darker over time
+  sky.fill.r = sky.fill.r - 10;
+  sky.fill.g = sky.fill.g - 10;
+  sky.fill.b = sky.fill.b - 10;
 
-//Move the bird
-bird.x = bird.x + 3;
+  //Move the bird
+  bird.x = bird.x + 3;
 
-//shake his head
-mrFurious.x = mrFurious.x + random(-2,2);
-mrFurious.y = mrFurious.y - random(-2,2);
+  //shake his head
+  let x = mrFurious.x + random(-15, 15);
+  let y = mrFurious.y - random(-10, 10);
 
 
-// Draw Mr. Furious as a coloured circle
-push();
-noStroke();
-fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
-pop();
+  // Draw Mr. Furious as a coloured circle
+  push();
+  noStroke();
+  fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
+  ellipse(x, y, mrFurious.size);
+  pop();
 
-// added the annoying bird
-push();
-fill (255,20,147)
-circle (bird.x,bird.y,25)
+  // added the annoying bird
+  push();
+  fill(255, 20, 147)
+  circle(bird.x, bird.y, 25)
 
+  //making him angrier
+  // mrFurious.x = constrain(mrFurious.x, mrFurious.minX, mrFurious.maxX)
+  // mrFurious.y = constrain(mrFurious.y, mrFurious.minY, mrFurious.maxY)
 
 }
