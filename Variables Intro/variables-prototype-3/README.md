@@ -2,7 +2,7 @@
 
 Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Variables%20Intro/variables-prototype-3/index.html)
 
 ## Description
 
@@ -16,7 +16,4 @@ This bit should attribute any code, assets or other elements used taken from oth
 
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
-
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
