@@ -6,6 +6,10 @@
  *
  */
 
+
+/**
+ * The Second prototype: 
+*/
 // The heart (x and y are the centre of the heart)
 let heart = {
     x: 240,
