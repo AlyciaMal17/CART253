@@ -1,4 +1,4 @@
-# Variable Prototype Porject - The Sunset
+# Variable Prototype Project - The Sunset
 
 Alycia Malonga
 
