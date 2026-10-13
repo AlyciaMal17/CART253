@@ -1,20 +1,19 @@
-# TITLE OF PROJECT
+# Variable Prototype Project - Nervous Dot
 
-AUTHOR NAME
+Alycia Malonga
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Nervous Dot is an interactive sketch about anxiety and stress building up over time. A small white dot sits in the middle of a dark background, and every time you click on it, it gets bigger, turns red, and starts shaking more. Eventually, the dot becomes so big and shaky that it fills most of the canvas. I wanted to show how small things can build up and become overwhelming over time, and how something that seems harmless at first can slowly become more intense with every click.
 
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+
 
 ## License
 
