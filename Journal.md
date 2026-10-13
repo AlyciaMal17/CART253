@@ -33,7 +33,8 @@ Prototype #1:
 <p>Overall, I liked seeing how a few variables and simple shapes could create different moods. I wanted Sunset to feel calm, Heartbeat to feel alive, and Nervous Dot to feel a little uncomfortable. If I continue working on Nervous Dot, I'd like to make the dot calm down over time or add sound to make the experience more intense.</p>
 
 <p> Here are the variable prototypes; 
-Prototype #1: 
+
+<p>Prototype #1: 
 
 ![The Sunset](./assets/image/VariablesPrototypeImage1.jpeg)</p>
 
