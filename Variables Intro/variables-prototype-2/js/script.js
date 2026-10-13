@@ -59,4 +59,5 @@ function draw() {
     ellipse(heart.x - s * 0.25, bottomY - s * 0.75, s * 0.7071);
     ellipse(heart.x + s * 0.25, bottomY - s * 0.75, s * 0.7071);
     pop();
+
 }
