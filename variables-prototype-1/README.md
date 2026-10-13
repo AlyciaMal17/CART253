@@ -1,20 +1,19 @@
-# TITLE OF PROJECT
+# Variable Prototype Porject - The Sunset
 
-AUTHOR NAME
+Alycia Malonga
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This Sunset is an interactive sketch about the transition from day to night. It has a yellow sun in a blue sky above a dark green hill. By moving the mouse up and down, you can control the sun's position and watch the sky change colours as the sun sets, going from bright blue to dark blue while the sun turns orange-red. I wanted to create something simple but still a little magical and calming, where you can see how changing the position of the sun and the colours can completely change the mood of the scene.
 
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+
 
 ## License
 
