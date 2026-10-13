@@ -2,7 +2,7 @@
 
 Alycia Malonga
 
-[View this project online](https://editor.p5js.org/AlyMal17/sketches/e0DaZtFfc)
+[View this project online](http://127.0.0.1:5500/Variables%20Intro/variables-prototype-1%20/index.html)
 
 ## Description
 
@@ -13,7 +13,4 @@ This Sunset is an interactive sketch about the transition from day to night. It 
 
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
-
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
