@@ -25,3 +25,9 @@ Prototype #1:
 <p>Prototype #3: 
 
 ![Bob The Minion](./assets/image/BobTheMinionPrototype.jpeg)</p>
+
+
+### ***Process Journal*** – Making my 3 Variable Prototypes P5 & GitHub (Week 4- Sept 21):
+<p>This week I made three prototypes: Sunset, Heartbeat, and Nervous Dot. They all use variables to change different things while the program is running, but each one has its own feeling and purpose.What surprised me the most was how much you can do with simple math. In Sunset, the sun's position changes the colours of the sky using map(). In Heartbeat, I used sin() to make the heart pulse on its own, even when the mouse isn't moving. In Nervous Dot, random() makes the dot shake, and every click makes it bigger, redder, and more intense.</p>
+<p>I also learned how useful JavaScript objects can be for keeping everything organized. The hardest part was understanding map() and getting the ranges right. Building the heart was also a bit tricky because I had to make sure all the shapes scaled properly together.</p>
+<p>Overall, I liked seeing how a few variables and simple shapes could create different moods. I wanted Sunset to feel calm, Heartbeat to feel alive, and Nervous Dot to feel a little uncomfortable. If I continue working on Nervous Dot, I'd like to make the dot calm down over time or add sound to make the experience more intense.</p>
