@@ -1,4 +1,4 @@
-#  Events Prototype 2 - The Barking Doorbell
+#  Events Prototype 3 - The Barking Doorbell
 
 Alycia Malonga
 
