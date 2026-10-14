@@ -1,23 +1,15 @@
-# TITLE OF PROJECT
+# Events Prototype 1 - Lightbulb
 
 AUTHOR NAME
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Events%20Intro/events-prototype-1/index.html)
 
 ## Description
-
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Lightbulb is an interactive sketch of a lightbulb in a dark room. When you press and hold the spacebar, the bulb lights up yellow and the room gets a little brighter. As soon as you let go, everything goes dark again. I wanted to make something simple but still interesting, showing how pressing one key can completely change a scene and make it feel like the light depends on you to stay on.
 
 ## Attribution
-
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
-
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
