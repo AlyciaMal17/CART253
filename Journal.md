@@ -46,3 +46,22 @@ Prototype #1:
 
 ![Bob The Minion](./assets/image/VariablesPrototypeImage3.jpeg)</p>
 
+
+### ***Process Journal*** – Making my 3 Interactive Conditionals Prototypes P5 & GitHub (Week 5- Sept 28):
+<p>This week I made three prototypes: Shy Creature, Mr. Mercurial, and Sleepy Eyes. They all use conditions to change different things while the program is running, but each one has its own feeling and purpose. What I found interesting was how a few simple shapes and changes could make something feel like it has emotions. In Shy Creature, the creature changes colour and runs away depending on how close the mouse is. In Mr. Mercurial, the face changes its expression depending on the mouse's height. In Sleepy Eyes, holding the mouse makes the eyes slowly close, and releasing it makes them open again.</p>
+<p>I also learned how useful conditions are for making a sketch react to what the user does. The hardest part was getting everything to work smoothly, especially making the eyes close gradually instead of all at once and making sure the creature reacts properly to the mouse. I realized that even though the projects look simple, there are a lot of little details in the code that make a difference.</p>
+<p>Overall, I liked seeing how I could give each prototype a different personality without needing anything too complicated. I wanted Shy Creature to feel shy, Mr. Mercurial to show different emotions, and Sleepy Eyes to feel calm and sleepy. If I continue working on one of them, I'd like to develop Shy Creature further by adding more reactions and making it feel even more like a real little creature.</p>
+
+<p> Here are the conditionals prototypes; 
+
+<p>Prototype #1: 
+
+![Shy Creature](./assets/image/ConditionaPrototypelsImage1.jpeg)</p>
+
+<p>Prototype #2: 
+
+![Mr. Mercurial](./assets/image/ConditionaPrototypelsImage2.jpeg)</p>
+
+<p>Prototype #3: 
+
+![Sleepy Eyes](./assets/image/ConditionaPrototypelsImage3.jpeg)</p>
