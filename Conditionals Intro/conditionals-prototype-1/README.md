@@ -1,4 +1,4 @@
-# Variables Prototype project 1 - The Sunset
+# Conditionals Prototype Project 1 - Shy Creature
 
 Alycia Malonga 
 
