@@ -1,5 +1,5 @@
 /**
- * Doorbell
+ * The Barking Doorbell
  * Alycia Malonga
  *
  * Click the doorbell button and a dog barks inside the house.

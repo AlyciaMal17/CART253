@@ -65,3 +65,23 @@ Prototype #1:
 <p>Prototype #3: 
 
 ![Sleepy Eyes](./assets/image/ConditionaPrototypelsImage3.jpeg)</p>
+
+### ***Process Journal*** – 3 Events Prototypes P5 & GitHub (Week 5- Sept 28):
+<p>This week I made three prototypes: Lightbulb, Stop Light, and The Barking Doorbell. They all use user input to change what happens in the sketch, but each one works a little differently. What surprised me the most was how one simple action, like pressing a key or clicking a button, could change an entire scene. In Lightbulb, holding the spacebar turns on the light, while letting go makes everything dark again. In Stop Light, clicking switches between red and green, which controls whether the car moves or stops. In The Barking Doorbell, clicking the button opens the door, turns on the light, and plays a dog bark before everything goes back to normal.</p>
+<p>I thought it was cool how I could make the sketches feel more interactive by using different types of input. Adding sound and a timer to The Barking Doorbell was especially interesting because it made the scene feel more realistic and gave it a little surprise. I also liked how the car in Stop Light keeps moving and comes back on the other side of the canvas, which makes the scene feel like it never really ends.</p>
+<p>The hardest part was understanding how to make everything happen at the right time and making sure each action worked properly. For example, The Barking Doorbell has to open when you click the button, stay open for two seconds, and then close automatically. I had to think about how different parts of the code work together instead of just focusing on one shape at a time.</p>
+<p>Overall, I liked seeing how a few shapes, variables, and user interactions could turn into something more interesting. I wanted Lightbulb to feel like the light depends on you, Stop Light to make you feel in control of the car, and The Barking Doorbell to be funny and a little unexpected. If I were to develop one further, I would choose The Barking Doorbell because I think it would be fun to add different sounds or have different things appear behind the door each time you ring it.</p>
+
+<p> Here are the events prototypes; 
+
+<p>Prototype #1: 
+
+![The Light Bulb](./assets/image/EventsPrototypeImage1.jpeg)</p>
+
+<p>Prototype #2: 
+
+![Stop Light](./assets/image/EventsPrototypeImage2.jpeg)</p>
+
+<p>Prototype #3: 
+
+![The Barking Doorbell](./assets/image/EventsPrototypeImage3.jpeg)</p>
