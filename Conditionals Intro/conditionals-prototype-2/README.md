@@ -1,23 +1,15 @@
-# TITLE OF PROJECT
+# Conditionals Prototype Project 2 - Mr. Mercurial
 
-AUTHOR NAME
+Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Conditionals%20Intro/conditionals-prototype-2/index.html)
 
 ## Description
+Mood Face is an interactive sketch of a face that changes its mood depending on where you move your mouse. The face starts grey with two black eyes on a lilac background. When you move the mouse to the top of the canvas, the face turns yellow and smiles. In the middle, it stays grey with a straight mouth, and at the bottom, it turns blue and frowns. I wanted to make something simple but fun that shows how changing a few colours and shapes can make a face look like it's feeling different emotions.
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
 
 ## Attribution
-
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
-
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.

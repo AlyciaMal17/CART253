@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Conditionals Prototype Project 3 - Sleepy Eyes
 
-AUTHOR NAME
+Alycia Malonga
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 

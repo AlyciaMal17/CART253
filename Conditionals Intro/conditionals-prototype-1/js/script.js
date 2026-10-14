@@ -1,5 +1,5 @@
 /**
- * Shy Creature
+ * The Shy Creature
  * Alycia Malonga
  *
  * A creature that is shy. It's happy when the mouse is far away,
