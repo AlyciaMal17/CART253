@@ -2,22 +2,14 @@
 
 Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Conditionals%20Intro/conditionals-prototype-3/index.html)
 
 ## Description
-
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Sleepy Eyes is an interactive sketch of a pair of eyes slowly falling asleep. The eyes are white with black pupils on a lilac background. When you press and hold the mouse, the eyelids slowly close and the eyes turn darker grey until they're completely shut. Once you let go, the eyes slowly open again and return to their original colour. I wanted to make something simple but still interesting, showing how a few shapes and small changes over time can make something look tired, almost like you're putting the eyes to sleep yourself.
 
 ## Attribution
-
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
-
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
