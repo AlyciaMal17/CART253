@@ -16,8 +16,21 @@ const ball = {
     height: 10,
     velocity: {
         x: 2.5,
-        y: 10
+        y: 3
     }
+
+};
+
+const ball2 = {
+    x: 250,
+    y: 40,
+    width: 10,
+    height: 10,
+    velocity: {
+        x: -2.5,
+        y: 3
+    }
+
 };
 
 // Our paddle
@@ -44,24 +57,28 @@ function draw() {
 
     movePaddle(paddle);
     moveBall(ball);
+    moveBall(ball2)
 
     handleBounce(ball, paddle);
+    handleBounce(ball2, paddle);
 
     drawPaddle(paddle);
     drawBall(ball);
+    drawBall(ball2)
 }
 
 /**
  * Moves the paddle
  */
 function movePaddle(paddle) {
-
+paddle.x = mouseX;
 }
 
 /**
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
+ball.y += ball.velocity.y;
 ball.x += ball.velocity.x;
 }
 
@@ -69,7 +86,16 @@ ball.x += ball.velocity.x;
  * Bounces the provided ball off the provided paddle
  */
 function handleBounce(ball, paddle) {
+let isoverlap = checkOverlap (ball, paddle);
+console.log(isoverlap)
+if (isoverlap) {
+    ball.velocity.y = ball.velocity.y * -1 ;
 
+}
+else {
+    ball2.velocity.y = ball2.velocity.y * 1 ;
+
+}
 }
 
 /**
@@ -80,7 +106,7 @@ function drawPaddle(paddle) {
     rectMode(CENTER);
     noStroke();
     fill("pink");
-    rect(mouseX, paddle.y, paddle.width, paddle.height);
+    rect(paddle.x, paddle.y, paddle.width, paddle.height);
     pop();
 }
 
@@ -95,6 +121,10 @@ function drawBall(ball) {
     rect(ball.x, ball.y, ball.width, ball.height);
     pop();
 }
+
+
+
+
 
 /**
  * Returns true if rectA and rectB overlap, and false otherwise
