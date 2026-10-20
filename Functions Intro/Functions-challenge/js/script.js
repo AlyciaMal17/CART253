@@ -80,7 +80,7 @@ function drawPaddle(paddle) {
     rectMode(CENTER);
     noStroke();
     fill("pink");
-    rect(paddle.x, paddle.y, paddle.width, paddle.height);
+    rect(mouseX, paddle.y, paddle.width, paddle.height);
     pop();
 }
 
