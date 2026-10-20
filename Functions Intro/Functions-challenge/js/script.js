@@ -8,7 +8,7 @@
 
 "use strict";
 
-// Our ball
+// Our ball : ball 1/2
 const ball = {
     x: 300,
     y: 20,
@@ -20,6 +20,7 @@ const ball = {
     }
 
 };
+
 
 const ball2 = {
     x: 250,
@@ -68,14 +69,14 @@ function draw() {
 }
 
 /**
- * Moves the paddle
+ * Moves the paddle, we use mouse x to place the paddle
  */
 function movePaddle(paddle) {
 paddle.x = mouseX;
 }
 
 /**
- * Moves the ball passed in as a parameter
+ * Moves the ball passed in as a parameter, for the two ball 
  */
 function moveBall(ball) {
 ball.y += ball.velocity.y;
@@ -83,8 +84,9 @@ ball.x += ball.velocity.x;
 }
 
 /**
- * Bounces the provided ball off the provided paddle
+ * Bounces the provided ball off the provided paddle, it worked for the two bal even if it's tricky
  */
+//Ball1
 function handleBounce(ball, paddle) {
 let isoverlap = checkOverlap (ball, paddle);
 console.log(isoverlap)
@@ -92,6 +94,7 @@ if (isoverlap) {
     ball.velocity.y = ball.velocity.y * -1 ;
 
 }
+//Ball2
 else {
     ball2.velocity.y = ball2.velocity.y * 1 ;
 
