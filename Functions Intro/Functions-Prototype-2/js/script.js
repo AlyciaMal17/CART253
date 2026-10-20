@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * Functions Protoype Project 1
  * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
