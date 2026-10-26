@@ -96,13 +96,16 @@ Prototype #1:
 <p>The hardest part was figuring out how to organize the functions and make everything work properly. For example, the balloons needed to change size and colour before popping, the flies had to react depending on the mouse's distance, and the fish needed to react to the bowl shaking. I learned how functions can help me create and control multiple objects without having to write the same code over and over.</p>
 <p>Overall, I enjoyed seeing how I could use the same idea of functions in three different ways. If I were to develop one further, I would choose Fish Tank because I think it would be fun to add more fish, different colours, or more reactions when the bowl gets shaken.</p>
 
-<p> Here are the events prototypes;
+<p>Here are the event prototypes:
 
-<p>Functions Prototype #1:   
-![Balloon Stand](./assets/image/Balloon%20Stand.jpeg) </p>
+<p>Functions Prototype #1: Balloon Stand</p>
 
-<p>Functions Prototype #2:   
+![Balloon Stand](./assets/image/Balloon%20Stand.jpeg)
+
+<p>Functions Prototype #2: Buzzing Flies
+
 ![Buzzing Flies](./assets/image/Buzzing%20Flies.jpeg)</p>
 
-<p>Functions Prototype #3:   
+<p>Functions Prototype #3: Fish Tank
+
 ![Fish Tank](./assets/image/Fish%20Tank.jpeg)</p>
