@@ -99,7 +99,7 @@ Prototype #1:
 <p> Here are the events prototypes;
 
 <p>Functions Prototype #1:   
-![Balloon Stand](./assets/image/Balloon%20Stand.jpeg)</p>
+![Balloon Stand](./assets/image/Balloon%20Stand.jpeg) </p>
 
 <p>Functions Prototype #2:   
 ![Buzzing Flies](./assets/image/Buzzing%20Flies.jpeg)</p>
