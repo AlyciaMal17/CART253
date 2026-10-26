@@ -1,23 +1,17 @@
-# TITLE OF PROJECT
+# Functions Protoype Project 3 - Fish Tank
 
-AUTHOR NAME
+Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Functions%20Intro/Functions-Prototype-3/index.html)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Fish Tank is a small sketch with three colourful fish swimming in a fish bowl on a wooden table. The fish float around peacefully until you press the spacebar, which shakes the bowl and makes the fish sick, turning them green with X eyes and frowns. I wanted it to feel calm at first, but then a little sad, to show that shaking the bowl has consequences. I also used functions to create and control all three fish without repeating the same code.
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
 
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
