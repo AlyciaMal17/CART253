@@ -14,9 +14,6 @@ const balls =[];
 function setup() {
   // Create the canvas
   createCanvas(400, 400);
-  // Create the ball
-  ball1 = createBall();
-  balls.push(ball1);
 }
 
 
@@ -27,11 +24,11 @@ function createBall() {
   // Create a ball object with appropriate properties
   const newBall = {
     // Position and dimensions
-    x: 200,
-    y: 200,
+    x: mouseX, //200
+    y: mouseY, //200
     size: 20,
     // Colour
-    fill: "#000000",
+    fill: "#ffcc00",
     // Movement
     velocity: {
       x: random(-5, 5),
@@ -45,7 +42,7 @@ function createBall() {
  * Moves and draws the ball
  */
 function draw() {
-  background("#87ceeb");
+  background("#ff008c");
   
 for (let ball of balls) {
   moveBall(ball);
@@ -60,6 +57,11 @@ for (let ball of balls) {
 function moveBall(ball) {
   ball.x += ball.velocity.x;
   ball.y += ball.velocity.y;
+}
+
+function mousePressed() {
+    balls.push (createBall());
+
 }
 
 /**
