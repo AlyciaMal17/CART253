@@ -109,3 +109,24 @@ Prototype #1:
 <p>Functions Prototype #3: Fish Tank
 
 ![Fish Tank](./assets/image/Fish%20Tank.jpeg)</p>
+
+### **_Process Journal_** – 3 Arrays Prototypes P5 & GitHub (Week 8 - Oct 26th):
+
+<p>This week I made three prototypes: Night Sky, Candy Catcher, and Annoyed Ghost. They all use arrays and loops to manage multiple objects or pieces of information, but each one has a different idea and interaction. In Night Sky, 30 glowing stars slowly move and twinkle across a gradient sky. When the mouse gets close, they scatter away and eventually settle back into place. In Candy Catcher, colourful candies fall from the top of the screen, and you have to click on as many as possible before the 45-second timer runs out. In Annoyed Ghost, a ghost goes trick-or-treating but nobody opens the door, and every click moves through his dialogue as he becomes more and more annoyed.</p>
+
+<p>I enjoyed giving each prototype its own personality and atmosphere. I especially liked experimenting with the visuals, colours and little interactions to make each sketch feel different. For Night Sky, I wanted a calm and dreamy feeling, while Candy Catcher was meant to start off easy and become more chaotic. I also thought Annoyed Ghost was a fun idea because I could use dialogue to tell a little story and make the character's personality change over time.</p>
+
+<p>The most interesting thing I learned was how arrays and loops can make it easier to manage multiple things without having to create each one separately. For example, in Night Sky, one array can hold all 30 stars, and the loop makes them all move and react individually. I also learned how arrays can store text, like the different dialogue lines in Annoyed Ghost. The more difficult part was understanding how to connect everything together, especially controlling the different interactions and making sure things happened at the right time. Candy Catcher was also interesting because I had to figure out how the speed of the candies could increase as the timer got closer to zero.</p>
+
+<p>Overall, I think it's cool how something as simple as an array and a loop can create a whole experience or even a small game. I hope people who try my prototypes notice the little details and enjoy interacting with them rather than just looking at them. If I were to develop one further, I would choose Night Sky because I think it would be interesting to add more types of stars, constellations or even a moon, while keeping the same calm atmosphere.</p>
+
+<p> Here are the arrays prototypes:
+
+<p>Arrays Prototype #1: Night Sky
+![Night Sky](./assets/image/ArraysPrototype1-Night%20Sky.jpeg)</p>
+
+<p>Arrays Prototype #2: Candy Catcher
+![Candy Catcher](./assets/image/ArraysPrototype2-Candy%20Catcher.jpeg)</p>
+
+<p>Arrays Prototype #3: Annoyed Ghost
+![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)</p>

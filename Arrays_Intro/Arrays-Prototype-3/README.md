@@ -1,23 +1,17 @@
-# TITLE OF PROJECT
+# Arrays Prototype Project 3 - Annoyed Ghost
 
-AUTHOR NAME
+Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/Arrays_Intro/Arrays-Prototype-3/index.html)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Annoyed Ghost is a small sketch about a ghost who just wants some candy but nobody will open the door because they think he's a real ghost. There's a picture of him trick-or-treating at a house, with a dialogue box at the bottom showing what he's saying. Every time you click, he moves to the next line and slowly goes from being cheerful and polite to begging and eventually getting annoyed. The border of the dialogue box also slowly changes from white to red as he loses his patience. I wanted the sketch to feel funny but also a little sad, almost like being left out of something so simple. I like how his mood changes with every click, making you feel a little bad for him as the story goes on. I also wanted to experiment with using an array of strings and a number called speechIndex to control the dialogue and move through the story one line at a time.
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
 
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
