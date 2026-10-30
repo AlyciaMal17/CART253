@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# Arrays Protoype Porject 1 - Night Sky
 
 AUTHOR NAME
 
