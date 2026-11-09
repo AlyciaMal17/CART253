@@ -2,7 +2,7 @@
 
 Alycia Malonga
 
-[View this project online](http://127.0.0.1:5500/Functions%20Intro/Functions-Prototype-3/index.html)
+[View this project online](https://alyciamal17.github.io/CART253/Functions%20Intro/Functions-Prototype-3/)
 
 ## Description
 
