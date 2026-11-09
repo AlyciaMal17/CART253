@@ -122,11 +122,11 @@ Prototype #1:
 
 <p> Here are the arrays prototypes:
 
-<p>Arrays Prototype #1: Night Sky
-![Night Sky](./assets/image/ArraysPrototype1-Night%20Sky.jpeg)</p>
+Arrays Prototype #1: Night Sky
+![Night Sky](./assets/image/ArraysPrototype1-Night%20Sky.jpeg)
 
-<p>Arrays Prototype #2: Candy Catcher
-![Candy Catcher](./assets/image/ArraysPrototype2-Candy%20Catcher.jpeg)</p>
+Arrays Prototype #2: Candy Catcher
+![Candy Catcher](./assets/image/ArraysPrototype2-Candy%20Catcher.jpeg)
 
-<p>Arrays Prototype #3: Annoyed Ghost
+Arrays Prototype #3: Annoyed Ghost
 ![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)</p>
