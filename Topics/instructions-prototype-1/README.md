@@ -2,11 +2,11 @@
 
 Alycia Malonga
 
-[View this project online](https://editor.p5js.org/AlyMal17/sketches/w49nPIgoY)
+[View this project online](https://alyciamal17.github.io/CART253/Topics/instructions-prototype-1/)
 
 ## Description
 
-For the first prototype I decided to create a purple tropical fish at the bottom of the ocean. His name is Gerald, he has green eyes, pink fins and a purple body. 
+For the first prototype I decided to create a purple tropical fish at the bottom of the ocean. His name is Gerald, he has green eyes, pink fins and a purple body.
 
 ## Attribution
 

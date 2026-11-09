@@ -2,7 +2,7 @@
 
 Alycia Malonga
 
-[View this project online](https://editor.p5js.org/AlyMal17/sketches/EOGSz0UR0)
+[View this project online](https://alyciamal17.github.io/CART253/Topics/instructions-prototype-2/)
 
 ## Description
 
@@ -14,7 +14,6 @@ This bit should attribute any code, assets or other elements used taken from oth
 
 > - This project uses [p5.js](https://p5js.org).
 > - Here you will find my comments on how I've progressed throughout this project with my [Coding Journal](Journal.md)
-
 
 ## License
 
