@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Variables Challenge
 
-AUTHOR NAME
+Alycia Malonga
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 

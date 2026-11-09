@@ -2,15 +2,16 @@
 
 Alycia Malonga
 
-[View this project online](http://127.0.0.1:5500/Variables%20Intro/variables-prototype-1%20/index.html)
+[View this project online](https://alyciamal17.github.io/CART253/Variables%20Intro/variables-prototype-1%20/index.html)
 
 ## Description
 
 This Sunset is an interactive sketch about the transition from day to night. It has a yellow sun in a blue sky above a dark green hill. By moving the mouse up and down, you can control the sun's position and watch the sky change colours as the sun sets, going from bright blue to dark blue while the sun turns orange-red. I wanted to create something simple but still a little magical and calming, where you can see how changing the position of the sun and the colours can completely change the mood of the scene.
 
 ## Attribution
+
 > - This project uses [p5.js](https://p5js.org).
 
-
 ## License
+
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
