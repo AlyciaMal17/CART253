@@ -15,18 +15,19 @@
 <p>The hardest part was definitely the coordinate math, especially making sure everything lined up properly when I resized things.</p>
 <p>I hope people looking at my work can see how much personality you can create with simple shapes. I’d like to develop the minion more by making its eyes follow the mouse or making it “breathe.”</p>
 
-<p> Here are the prototypes; 
-Prototype #1:
+Here are the prototypes:
 
-![Gerald the fish](./assets/image/PurpleFishPrototype.jpeg)</p>
+**Prototype #1:**
 
-<p>Prototype #2:
+![Gerald the fish](./assets/image/PurpleFishPrototype.jpeg)
 
-![The Ice Cream Cone](./assets/image/IceCreamPrototype.jpeg)</p>
+**Prototype #2:**
 
-<p>Prototype #3:
+![The Ice Cream Cone](./assets/image/IceCreamPrototype.jpeg)
 
-![Bob The Minion](./assets/image/BobTheMinionPrototype.jpeg)</p>
+**Prototype #3:**
+
+![Bob The Minion](./assets/image/BobTheMinionPrototype.jpeg)
 
 ### **_Process Journal_** – Making my 3 Variable Prototypes P5 & GitHub (Week 4- Sept 21):
 
@@ -34,19 +35,19 @@ Prototype #1:
 <p>I also learned how useful JavaScript objects can be for keeping everything organized. The hardest part was understanding map() and getting the ranges right. Building the heart was also a bit tricky because I had to make sure all the shapes scaled properly together.</p>
 <p>Overall, I liked seeing how a few variables and simple shapes could create different moods. I wanted Sunset to feel calm, Heartbeat to feel alive, and Nervous Dot to feel a little uncomfortable. If I continue working on Nervous Dot, I'd like to make the dot calm down over time or add sound to make the experience more intense.</p>
 
-<p> Here are the variable prototypes;
+Here are the variable prototypes:
 
-<p>Prototype #1:
+**Prototype #1:**
 
-![The Sunset](./assets/image/VariablesPrototypeImage1.jpeg)</p>
+![The Sunset](./assets/image/VariablesPrototypeImage1.jpeg)
 
-<p>Prototype #2:
+**Prototype #2:**
 
-![The Beating Heart](./assets/image/VariablesPrototypeImage2.jpeg)</p>
+![The Beating Heart](./assets/image/VariablesPrototypeImage2.jpeg)
 
-<p>Prototype #3:
+**Prototype #3:**
 
-![Bob The Minion](./assets/image/VariablesPrototypeImage3.jpeg)</p>
+![Bob The Minion](./assets/image/VariablesPrototypeImage3.jpeg)
 
 ### **_Process Journal_** – Making my 3 Interactive Conditionals Prototypes P5 & GitHub (Week 5- Sept 28):
 
@@ -54,19 +55,19 @@ Prototype #1:
 <p>I also learned how useful conditions are for making a sketch react to what the user does. The hardest part was getting everything to work smoothly, especially making the eyes close gradually instead of all at once and making sure the creature reacts properly to the mouse. I realized that even though the projects look simple, there are a lot of little details in the code that make a difference.</p>
 <p>Overall, I liked seeing how I could give each prototype a different personality without needing anything too complicated. I wanted Shy Creature to feel shy, Mr. Mercurial to show different emotions, and Sleepy Eyes to feel calm and sleepy. If I continue working on one of them, I'd like to develop Shy Creature further by adding more reactions and making it feel even more like a real little creature.</p>
 
-<p> Here are the conditionals prototypes;
+Here are the conditionals prototypes:
 
-<p>Prototype #1:
+**Prototype #1:**
 
-![Shy Creature](./assets/image/ConditionaPrototypelsImage1.jpeg)</p>
+![Shy Creature](./assets/image/ConditionaPrototypelsImage1.jpeg)
 
-<p>Prototype #2:
+**Prototype #2:**
 
-![Mr. Mercurial](./assets/image/ConditionaPrototypelsImage2.jpeg)</p>
+![Mr. Mercurial](./assets/image/ConditionaPrototypelsImage2.jpeg)
 
-<p>Prototype #3:
+**Prototype #3:**
 
-![Sleepy Eyes](./assets/image/ConditionaPrototypelsImage3.jpeg)</p>
+![Sleepy Eyes](./assets/image/ConditionaPrototypelsImage3.jpeg)
 
 ### **_Process Journal_** – 3 Events Prototypes P5 & GitHub (Week 6 - Oct 5th):
 
@@ -75,19 +76,19 @@ Prototype #1:
 <p>The hardest part was understanding how to make everything happen at the right time and making sure each action worked properly. For example, The Barking Doorbell has to open when you click the button, stay open for two seconds, and then close automatically. I had to think about how different parts of the code work together instead of just focusing on one shape at a time.</p>
 <p>Overall, I liked seeing how a few shapes, variables, and user interactions could turn into something more interesting. I wanted Lightbulb to feel like the light depends on you, Stop Light to make you feel in control of the car, and The Barking Doorbell to be funny and a little unexpected. If I were to develop one further, I would choose The Barking Doorbell because I think it would be fun to add different sounds or have different things appear behind the door each time you ring it.</p>
 
-<p> Here are the events prototypes;
+Here are the events prototypes:
 
-<p>Prototype #1:
+**Prototype #1:**
 
-![The Light Bulb](./assets/image/EventsPrototypeImage1.jpeg)</p>
+![The Light Bulb](./assets/image/EventsPrototypeImage1.jpeg)
 
-<p>Prototype #2:
+**Prototype #2:**
 
-![Stop Light](./assets/image/EventsPrototypeImage2.jpeg)</p>
+![Stop Light](./assets/image/EventsPrototypeImage2.jpeg)
 
-<p>Prototype #3:
+**Prototype #3:**
 
-![The Barking Doorbell](./assets/image/EventsPrototypeImage3.jpeg)</p>
+![The Barking Doorbell](./assets/image/EventsPrototypeImage3.jpeg)
 
 ### **_Process Journal_** – 3 Function Prototypes P5 & GitHub (Week 7 - Oct 19th):
 
@@ -96,19 +97,19 @@ Prototype #1:
 <p>The hardest part was figuring out how to organize the functions and make everything work properly. For example, the balloons needed to change size and colour before popping, the flies had to react depending on the mouse's distance, and the fish needed to react to the bowl shaking. I learned how functions can help me create and control multiple objects without having to write the same code over and over.</p>
 <p>Overall, I enjoyed seeing how I could use the same idea of functions in three different ways. If I were to develop one further, I would choose Fish Tank because I think it would be fun to add more fish, different colours, or more reactions when the bowl gets shaken.</p>
 
-<p>Here are the event prototypes:
+Here are the function prototypes:
 
-<p>Functions Prototype #1: Balloon Stand</p>
+**Functions Prototype #1: Balloon Stand**
 
 ![Balloon Stand](./assets/image/Balloon%20Stand.jpeg)
 
-<p>Functions Prototype #2: Buzzing Flies
+**Functions Prototype #2: Buzzing Flies**
 
-![Buzzing Flies](./assets/image/Buzzing%20Flies.jpeg)</p>
+![Buzzing Flies](./assets/image/Buzzing%20Flies.jpeg)
 
-<p>Functions Prototype #3: Fish Tank
+**Functions Prototype #3: Fish Tank**
 
-![Fish Tank](./assets/image/Fish%20Tank.jpeg)</p>
+![Fish Tank](./assets/image/Fish%20Tank.jpeg)
 
 ### **_Process Journal_** – 3 Arrays Prototypes P5 & GitHub (Week 8 - Oct 26th):
 
@@ -120,13 +121,16 @@ Prototype #1:
 
 <p>Overall, I think it's cool how something as simple as an array and a loop can create a whole experience or even a small game. I hope people who try my prototypes notice the little details and enjoy interacting with them rather than just looking at them. If I were to develop one further, I would choose Night Sky because I think it would be interesting to add more types of stars, constellations or even a moon, while keeping the same calm atmosphere.</p>
 
-<p> Here are the arrays prototypes:
+Here are the arrays prototypes:
 
-Arrays Prototype #1: Night Sky
+**Arrays Prototype #1: Night Sky**
+
 ![Night Sky](./assets/image/ArraysPrototype1-Night%20Sky.jpeg)
 
-Arrays Prototype #2: Candy Catcher
+**Arrays Prototype #2: Candy Catcher**
+
 ![Candy Catcher](./assets/image/ArraysPrototype2-Candy%20Catcher.jpeg)
 
-Arrays Prototype #3: Annoyed Ghost
-![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)</p>
+**Arrays Prototype #3: Annoyed Ghost**
+
+![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)
