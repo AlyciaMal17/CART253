@@ -134,3 +134,7 @@ Here are the arrays prototypes:
 **Arrays Prototype #3: Annoyed Ghost**
 
 ![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)
+
+### **_Process Journal_** – Final Prototype Project P5 & GitHub (Week of Nov 16th):
+
+<p> I don't have a full idea yet but i think i'll be getting some inspirtation from my past work during this corse and devellop it even more.</p>
