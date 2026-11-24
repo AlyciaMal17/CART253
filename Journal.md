@@ -135,6 +135,13 @@ Here are the arrays prototypes:
 
 ![Annoyed Ghost](./assets/image/ArraysPrototype3-Annoyed%20Ghost.jpeg)
 
-### **_Process Journal_** – Final Prototype Project P5 & GitHub (Week of Nov 16th):
+### **_Process Journal_** – Final Prototype Project P5 & GitHub (Week of Nov 16th-24th):
 
-<p> I don't have a full idea yet but i think i'll be getting some inspirtation from my past work during this corse and devellop it even more.</p>
+<p> ### Prototype Final - Monkey Steal Monkey Move; Catch that thief! 
+For my final project, I decided to create **Monkey Steal Monkey Move**, an endless runner game inspired by *Temple Run* and the movie *Rio*. I really liked the idea of a fast-paced game where the player has to react quickly, avoid obstacles, and collect objects along the way. The monkey stealing the jewelry in *Rio* also gave me the idea for the storyline. In my game, a tourist is enjoying their vacation when a mischievous monkey steals their backpack full of jewelry, forcing them to chase after him through the jungle. </p>
+
+<p> I also wanted to build on some of my previous prototypes, especially my **Arrays** and dialogue projects. I reused the idea of arrays to organize things like the trees, stars, obstacles, and different types of jewelry. I also included a dialogue scene at the beginning to introduce the characters and explain what happens before the actual game starts. The player can press SPACE or click to move through the conversations.  For the gameplay, I wanted the controls to be simple and easy to understand. The LEFT and RIGHT arrow keys move the tourist between three lanes, the UP arrow makes the character jump over logs, and the DOWN arrow makes them slide under branches. Players also have to collect necklaces, bracelets, earrings, and crowns while avoiding obstacles and trying to catch the monkey. I added a score, three lives, a jewelry counter, and a progress meter to make the game feel more complete and give the player a goal.</p>
+
+<p> For the visual style, I wanted everything to feel colourful, playful, and tropical. I used different shades of green for the jungle, with trees surrounding the path, a night sky with stars, and bright colours for the characters and jewelry so that the important objects stand out. I also designed the tourist and monkey myself using shapes and colours in p5.js. I wanted the characters to be recognizable without needing complicated images or animations. I also wanted the overall atmosphere to feel adventurous, almost like a cartoon version of a jungle adventure.</p>
+
+<p> I wanted the music and sound effects to help make the chase feel more exciting, with an adventurous jungle atmosphere that matches the gameplay. Overall, I chose this idea because I wanted to challenge myself to make something more interactive than my previous projects. I got to experiment with arrays, objects, functions, animation, movement, and keyboard interactions while creating a game that has its own story, characters, and visual identity.</p>
