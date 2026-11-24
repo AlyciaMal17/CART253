@@ -2,7 +2,7 @@
 
 Alycia Malonga
 
-[View this project online]()
+[View this project online](https://alyciamal17.github.io/CART253/Final%20Prototype/Final%20Prototype%201/)
 
 ## Description
 
