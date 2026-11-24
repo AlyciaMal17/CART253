@@ -1,23 +1,17 @@
-# TITLE OF PROJECT
+# Prototype Final - Monkey Steal Monkey Move; Catch that thief!
 
-AUTHOR NAME
+Alycia Malonga
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+For my final project, I wanted to create **Monkey Steal Monkey Move; Catch that thief!**, an endless runner game inspired by _Temple Run_ and the movie _Rio_. I liked the fast-paced gameplay of _Temple Run_, where players have to dodge obstacles, jump, slide, and collect items while running. I was also inspired by the mischievous monkeys from the icon film _Rio_ that steals valuable jewelry, which gave me the idea for the game's storyline. I also wanted to build on my previous **Arrays prototype**, especially the dialogue feature, by using conversations to introduce the story and guide the player through the game. I decided to combine all these ideas to create something interactive, fun, and original while challenging myself to develop a more complete game using p5.js.
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
-
-This bit could include the license you want to apply to your work. For example:
 
 > This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.

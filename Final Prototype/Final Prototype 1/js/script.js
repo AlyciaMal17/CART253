@@ -10,7 +10,7 @@
  * - UP arrow: jump (over logs and rocks)
  * - DOWN arrow: slide (under hanging branches)
  * - Collecting jewelry closes the gap. Hitting obstacles lets him get away!
- * - SPACE: advance the dialogue / restart
+ * - SPACE: jump while playing; advance dialogue or restart otherwise
  */
 
 "use strict";
@@ -86,7 +86,7 @@ const dialogue = [
   },
   {
     speaker: "Tip",
-    text: "Run after him! LEFT and RIGHT switch lanes, UP jumps, DOWN slides. Grab the jewelry he drops to catch up!",
+    text: "Run after him! LEFT and RIGHT switch lanes, UP or SPACE jumps, DOWN slides. Grab the jewelry he drops to catch up!",
     mood: "angry", pack: false, monkeyX: 820, monkeyPack: true,
   },
 ];
@@ -1231,14 +1231,22 @@ function drawMonkeyFront(hasPack) {
 // ---------- Input ----------
 
 function keyPressed() {
-  let isAction = key === " " || keyCode === ENTER;
+  let isAction = key === " " || key === ENTER;
+  let isMovementKey =
+    key === LEFT_ARROW ||
+    key === RIGHT_ARROW ||
+    key === UP_ARROW ||
+    key === DOWN_ARROW;
 
   if (state === "dialogue") {
     if (isAction) {
       advanceDialogue();
       return false;
     }
-    return;
+    if (!isMovementKey) {
+      return;
+    }
+    startGame();
   }
 
   if (state === "win" || state === "lose") {
@@ -1249,19 +1257,24 @@ function keyPressed() {
     return;
   }
 
-  if (keyCode === LEFT_ARROW) {
-    changeLane(-1);
-    return false;
-  }
-  if (keyCode === RIGHT_ARROW) {
-    changeLane(1);
-    return false;
-  }
-  if (keyCode === UP_ARROW) {
+  if (key === " ") {
     jump();
     return false;
   }
-  if (keyCode === DOWN_ARROW) {
+
+  if (key === LEFT_ARROW) {
+    changeLane(-1);
+    return false;
+  }
+  if (key === RIGHT_ARROW) {
+    changeLane(1);
+    return false;
+  }
+  if (key === UP_ARROW) {
+    jump();
+    return false;
+  }
+  if (key === DOWN_ARROW) {
     slide();
     return false;
   }
