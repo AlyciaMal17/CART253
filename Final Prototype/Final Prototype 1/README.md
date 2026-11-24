@@ -2,11 +2,11 @@
 
 Alycia Malonga
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online]()
 
 ## Description
 
-For my final project, I wanted to create **Monkey Steal Monkey Move; Catch that thief!**, an endless runner game inspired by _Temple Run_ and the movie _Rio_. I liked the fast-paced gameplay of _Temple Run_, where players have to dodge obstacles, jump, slide, and collect items while running. I was also inspired by the mischievous monkeys from the icon film _Rio_ that steals valuable jewelry, which gave me the idea for the game's storyline. I also wanted to build on my previous **Arrays prototype**, especially the dialogue feature, by using conversations to introduce the story and guide the player through the game. I decided to combine all these ideas to create something interactive, fun, and original while challenging myself to develop a more complete game using p5.js.
+For my final prototype project, I wanted to create **Monkey Steal Monkey Move; Catch that thief!**, an endless runner game inspired by _Temple Run_ and the movie _Rio_. I liked the fast-paced gameplay of _Temple Run_, where players have to dodge obstacles, jump, slide, and collect items while running. I was also inspired by the mischievous monkeys from the icon film _Rio_ that steals valuable jewelry, which gave me the idea for the game's storyline. I also wanted to build on my previous **Arrays prototype**, especially the dialogue feature, by using conversations to introduce the story and guide the player through the game. I decided to combine all these ideas to create something interactive, fun, and original while challenging myself to develop a more complete game using p5.js.
 
 ## Attribution
 
