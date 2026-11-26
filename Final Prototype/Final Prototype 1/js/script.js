@@ -1,5 +1,5 @@
 /**
- * Monkey Steal Monkey Move: Catch that thief!
+* Monkey Steal Monkey Move: Catch that thief!
  * Alycia Malonga
  *
  * A monkey stole a tourist's backpack full of jewelry! Chase him through the
@@ -10,13 +10,17 @@
  * - UP arrow: jump (over logs and rocks)
  * - DOWN arrow: slide (under hanging branches)
  * - Collecting jewelry closes the gap. Hitting obstacles lets him get away!
- * - SPACE: jump while playing; advance dialogue or restart otherwise
+ * - SPACE: advance the dialogue / restart
+ * - P or ESC: pause the game
+ * - M: music on / off
+ *
+ * Buttons: Start (home screen), Back (dialogue), Pause (during the game)
  */
 
 "use strict";
 
 // ----- Game state -----
-let state = "dialogue"; // "dialogue", "play", "win", or "lose"
+let state = "home"; // "home", "dialogue", "play", "paused", "win", or "lose"
 let score = 0;
 let lives = 3;
 let gap = 520; // distance between you and the monkey
@@ -26,6 +30,14 @@ let startTime = 0;
 let shake = 0;
 let obstacleTimer = 0;
 let dropTimer = 60;
+let pauseStart = 0; // when the pause began
+
+// ----- Music -----
+const MUSIC_FILE = "assets/sounds/monkeystealgameaudio.wav"; 
+let music;
+let musicLoaded = false;
+let musicWanted = false; // true once the player has pressed Start
+let musicOn = true;
 
 // ----- Perspective (pseudo-3D) -----
 const HORIZON_Y = 170; // where the road meets the sky
@@ -86,13 +98,16 @@ const dialogue = [
   },
   {
     speaker: "Tip",
-    text: "Run after him! LEFT and RIGHT switch lanes, UP or SPACE jumps, DOWN slides. Grab the jewelry he drops to catch up!",
+    text: "Run after him! LEFT and RIGHT switch lanes, UP jumps, DOWN slides. Grab the jewelry he drops to catch up!",
     mood: "angry", pack: false, monkeyX: 820, monkeyPack: true,
   },
 ];
 
 function setup() {
-  createCanvas(640, 480);
+  let cnv = createCanvas(640, 480);
+  cnv.elt.tabIndex = 0; // lets the canvas receive keyboard focus
+  cnv.elt.focus();
+  loadMusic();
   resetCollected();
 
   // Jungle trees on both sides of the path
@@ -134,7 +149,16 @@ function laneScreenX(lane, s) {
 function draw() {
   if (state === "dialogue") {
     drawDialogue();
+    drawButton(buttons.back);
+    drawMusicButton();
     return;
+  }
+
+  // The home screen shows the jungle scrolling slowly in the background
+  if (state === "home") {
+    monkey.z = gap;
+    scrollJungle(4);
+    updateMonkey();
   }
 
   push();
@@ -161,9 +185,15 @@ function draw() {
 
   if (state === "play") {
     drawHUD();
+  } else if (state === "paused") {
+    drawHUD();
+    drawPauseMenu();
+  } else if (state === "home") {
+    drawHomeScreen();
   } else {
     drawEndScreen();
   }
+  drawMusicButton();
 }
 
 // ---------- Game logic ----------
@@ -376,9 +406,12 @@ function addText(message, x, y) {
 function drawParticles() {
   noStroke();
   for (let p of particles) {
-    p.x += p.vx;
-    p.y += p.vy;
-    p.life--;
+    // Particles freeze while the game is paused
+    if (state !== "paused") {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.life--;
+    }
     let alpha = map(p.life, 0, p.maxLife, 0, 255);
     if (p.text !== null) {
       fill(255, 240, 150, alpha);
@@ -386,7 +419,9 @@ function drawParticles() {
       textSize(p.size);
       text(p.text, p.x, p.y);
     } else {
-      p.vy += 0.2;
+      if (state !== "paused") {
+        p.vy += 0.2;
+      }
       fill(p.col[0], p.col[1], p.col[2], alpha);
       ellipse(p.x, p.y, p.size);
     }
@@ -948,6 +983,8 @@ function drawHUD() {
     textSize(14);
     shadowText("x" + collected[type], x + 17, height - 25);
   }
+
+  drawButton(buttons.pause);
 }
 
 function drawEndScreen() {
@@ -983,8 +1020,10 @@ function drawEndScreen() {
     shadowText("x" + collected[type], x, 325);
   }
 
-  textSize(18 + sin(frameCount * 0.1) * 2);
-  shadowText("Press SPACE to chase him again", width / 2, 400);
+  textSize(14);
+  shadowText("Press SPACE to play again", width / 2, 380);
+  drawButton(buttons.endAgain);
+  drawButton(buttons.endHome);
 }
 
 // ---------- Dialogue scene ----------
@@ -1228,63 +1267,342 @@ function drawMonkeyFront(hasPack) {
   }
 }
 
+// ---------- Buttons ----------
+
+// Every button is an object with a position, a size and a label
+const buttons = {
+  start: { x: 220, y: 330, w: 200, h: 54, label: "Start the Game" },
+  back: { x: 14, y: 10, w: 84, h: 32, label: "< Back" },
+  pause: { x: 538, y: 10, w: 40, h: 32, label: "II" },
+  music: { x: 586, y: 10, w: 40, h: 32, label: "" },
+  resume: { x: 220, y: 240, w: 200, h: 50, label: "Resume" },
+  pauseHome: { x: 220, y: 310, w: 200, h: 50, label: "Home" },
+  endAgain: { x: 130, y: 398, w: 180, h: 46, label: "Play Again" },
+  endHome: { x: 330, y: 398, w: 180, h: 46, label: "Home" },
+};
+
+// Is the mouse on top of this button?
+function isOver(button) {
+  return (
+    mouseX > button.x &&
+    mouseX < button.x + button.w &&
+    mouseY > button.y &&
+    mouseY < button.y + button.h
+  );
+}
+
+// Draws a button (it lights up when the mouse is over it)
+function drawButton(button) {
+  noStroke();
+  fill(0, 0, 0, 70);
+  rect(button.x + 3, button.y + 4, button.w, button.h, 12);
+
+  if (isOver(button)) {
+    fill(255, 205, 80);
+  } else {
+    fill(255, 150, 80);
+  }
+  rect(button.x, button.y, button.w, button.h, 12);
+
+  if (button.label !== "") {
+    fill(60, 30, 20);
+    textAlign(CENTER, CENTER);
+    textSize(button.h > 40 ? 20 : 15);
+    text(button.label, button.x + button.w / 2, button.y + button.h / 2);
+  }
+}
+
+// Draws the music button with a little speaker icon (crossed out when muted)
+function drawMusicButton() {
+  drawButton(buttons.music);
+  const cx = buttons.music.x + buttons.music.w / 2;
+  const cy = buttons.music.y + buttons.music.h / 2;
+
+  push();
+  noStroke();
+  fill(60, 30, 20);
+  rect(cx - 10, cy - 4, 6, 8);
+  quad(cx - 5, cy - 4, cx + 2, cy - 9, cx + 2, cy + 9, cx - 5, cy + 4);
+  if (musicOn) {
+    noFill();
+    stroke(60, 30, 20);
+    strokeWeight(2);
+    arc(cx + 3, cy, 10, 12, -HALF_PI * 0.8, HALF_PI * 0.8);
+    arc(cx + 3, cy, 18, 20, -HALF_PI * 0.8, HALF_PI * 0.8);
+  } else {
+    stroke(200, 40, 40);
+    strokeWeight(3);
+    line(cx + 4, cy - 6, cx + 12, cy + 6);
+    line(cx + 12, cy - 6, cx + 4, cy + 6);
+  }
+  pop();
+}
+
+// ---------- Home and pause screens ----------
+
+// Makes the jungle slide past (used behind the home screen)
+function scrollJungle(amount) {
+  scrollZ += amount;
+  for (let tree of trees) {
+    tree.z -= amount;
+    if (tree.z < -100) {
+      tree.z += FAR_Z + 100;
+      tree.off = random(2.4, 3.6);
+    }
+  }
+}
+
+function drawHomeScreen() {
+  noStroke();
+  fill(0, 0, 0, 100);
+  rect(0, 0, width, height);
+
+  textAlign(CENTER, CENTER);
+  textSize(56);
+  shadowText("Jungle Chase", width / 2, 130);
+  textSize(18);
+  shadowText("A monkey stole your backpack full of jewelry!", width / 2, 195);
+  shadowText("Chase him down and get it back.", width / 2, 222);
+
+  drawButton(buttons.start);
+
+  textAlign(CENTER, CENTER);
+  textSize(14);
+  shadowText("Arrow keys: move, jump and slide   |   P: pause   |   M: music", width / 2, 425);
+}
+
+function drawPauseMenu() {
+  noStroke();
+  fill(0, 0, 0, 150);
+  rect(0, 0, width, height);
+
+  textAlign(CENTER, CENTER);
+  textSize(44);
+  shadowText("Paused", width / 2, 170);
+
+  drawButton(buttons.resume);
+  drawButton(buttons.pauseHome);
+
+  textAlign(CENTER, CENTER);
+  textSize(14);
+  shadowText("Press P to resume", width / 2, 400);
+}
+
+// ---------- Moving between screens ----------
+
+// Starts the story dialogue (and the music)
+function startDialogue() {
+  state = "dialogue";
+  dialogueIndex = 0;
+  monkeyDX = 800;
+  lineStartFrame = frameCount;
+  startMusic();
+}
+
+// Back to the home screen
+function goHome() {
+  state = "home";
+  dialogueIndex = 0;
+  monkeyDX = 800;
+  lineStartFrame = 0;
+  things = [];
+  particles = [];
+  gap = 520;
+  monkey.z = 520;
+  player.lane = 0;
+  player.x = 0;
+  player.h = 0;
+  player.vh = 0;
+  player.sliding = 0;
+  player.hurtUntil = 0;
+  setMusicVolume();
+}
+
+function pauseGame() {
+  if (state !== "play") {
+    return;
+  }
+  state = "paused";
+  pauseStart = millis();
+  setMusicVolume();
+}
+
+function resumeGame() {
+  if (state !== "paused") {
+    return;
+  }
+  // The clock kept running while paused, so move the timers forward
+  const pausedFor = millis() - pauseStart;
+  startTime += pausedFor;
+  if (player.hurtUntil > 0) {
+    player.hurtUntil += pausedFor;
+  }
+  state = "play";
+  setMusicVolume();
+}
+
+// ---------- Music ----------
+
+// Loads the sound file (needs the p5.sound library, which the p5 web editor includes)
+function loadMusic() {
+  if (typeof loadSound !== "function") {
+    console.log("p5.sound isn't loaded, so there will be no music.");
+    return;
+  }
+  music = loadSound(
+    MUSIC_FILE,
+    () => {
+      musicLoaded = true;
+      music.setVolume(0.4);
+      // If the player already pressed Start while it was loading
+      if (musicWanted) {
+        startMusic();
+      }
+    },
+    () => {
+      console.log("Couldn't load the music file: " + MUSIC_FILE);
+    }
+  );
+}
+
+// Starts the music, looping (browsers only allow this after a click or key press)
+function startMusic() {
+  musicWanted = true;
+  if (typeof userStartAudio === "function") {
+    userStartAudio();
+  }
+  if (musicLoaded && !music.isPlaying()) {
+    music.loop();
+  }
+  setMusicVolume();
+}
+
+// Loud while playing, quieter while paused, silent when muted
+function setMusicVolume() {
+  if (!musicLoaded) {
+    return;
+  }
+  let volume = 0;
+  if (musicOn) {
+    volume = state === "paused" ? 0.12 : 0.4;
+  }
+  music.setVolume(volume, 0.2);
+}
+
+function toggleMusic() {
+  musicOn = !musicOn;
+  setMusicVolume();
+}
+
 // ---------- Input ----------
 
 function keyPressed() {
-  let isAction = key === " " || key === ENTER;
-  let isMovementKey =
-    key === LEFT_ARROW ||
-    key === RIGHT_ARROW ||
-    key === UP_ARROW ||
-    key === DOWN_ARROW;
+  const isSpace = key === " " || keyCode === 32 || keyCode === ENTER;
+  const isPause = key === "p" || key === "P" || keyCode === ESCAPE;
 
-  if (state === "dialogue") {
-    if (isAction) {
-      advanceDialogue();
-      return false;
-    }
-    if (!isMovementKey) {
-      return;
-    }
-    startGame();
+  // Music can be turned on and off on any screen
+  if (key === "m" || key === "M") {
+    toggleMusic();
+    return false;
   }
 
-  if (state === "win" || state === "lose") {
-    if (isAction) {
-      startGame();
+  if (state === "home") {
+    if (isSpace) {
+      startDialogue();
       return false;
     }
     return;
   }
 
-  if (key === " ") {
-    jump();
-    return false;
+  if (state === "dialogue") {
+    if (isSpace) {
+      advanceDialogue();
+      return false;
+    }
+    if (keyCode === ESCAPE) {
+      goHome();
+      return false;
+    }
+    return;
   }
 
-  if (key === LEFT_ARROW) {
+  if (state === "paused") {
+    if (isSpace || isPause) {
+      resumeGame();
+      return false;
+    }
+    return;
+  }
+
+  if (state === "win" || state === "lose") {
+    if (isSpace) {
+      startGame();
+      return false;
+    }
+    if (keyCode === ESCAPE) {
+      goHome();
+      return false;
+    }
+    return;
+  }
+
+  // Playing
+  if (isPause) {
+    pauseGame();
+    return false;
+  }
+  if (keyCode === LEFT_ARROW || keyCode === 37) {
     changeLane(-1);
     return false;
   }
-  if (key === RIGHT_ARROW) {
+  if (keyCode === RIGHT_ARROW || keyCode === 39) {
     changeLane(1);
     return false;
   }
-  if (key === UP_ARROW) {
+  if (keyCode === UP_ARROW || keyCode === 38) {
     jump();
     return false;
   }
-  if (key === DOWN_ARROW) {
+  if (keyCode === DOWN_ARROW || keyCode === 40) {
     slide();
     return false;
   }
 }
 
 function mousePressed() {
-  // Clicking also works for the dialogue and the end screens
-  if (state === "dialogue") {
-    advanceDialogue();
+  window.focus(); // make sure the keyboard is listening to the sketch
+
+  // The music button works on every screen
+  if (isOver(buttons.music)) {
+    toggleMusic();
+    return;
+  }
+
+  if (state === "home") {
+    if (isOver(buttons.start)) {
+      startDialogue();
+    }
+  } else if (state === "dialogue") {
+    if (isOver(buttons.back)) {
+      goHome();
+    } else {
+      advanceDialogue();
+    }
+  } else if (state === "play") {
+    if (isOver(buttons.pause)) {
+      pauseGame();
+    }
+  } else if (state === "paused") {
+    if (isOver(buttons.resume)) {
+      resumeGame();
+    } else if (isOver(buttons.pauseHome)) {
+      goHome();
+    }
   } else if (state === "win" || state === "lose") {
-    startGame();
+    if (isOver(buttons.endAgain)) {
+      startGame();
+    } else if (isOver(buttons.endHome)) {
+      goHome();
+    }
   }
 }
