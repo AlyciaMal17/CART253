@@ -137,6 +137,12 @@ Here are the arrays prototypes:
 
 ### **_Process Journal_** – Final Prototype Project P5 & GitHub (Week of Nov 16th-24th):
 
+### Journal entry 1: Nov 10 2026
+
+<p>For my final project I'm not really sure what I want to do. I think I want to make my game very fun and interactive. I also miss the summer very much so I think that’ll be a big use of inspiration for me. Ive been watching a few of my childhood favorites like h2o Just Add Water, rio, Aquamarine to get my ideas flowing but I think the disney film rio reminded me of a game I used to play as a kid temple run. I'm not certain on how I'll make the game work but I want it to be adrenaline rushing and involve a character running from something.</p>
+
+### Journal entry 2: Nov 15 2025
+
 <p> ### Prototype Final - Monkey Steal Monkey Move; Catch that thief! 
 For my final project, I decided to create **Monkey Steal Monkey Move**, an endless runner game inspired by *Temple Run* and the movie *Rio*. I really liked the idea of a fast-paced game where the player has to react quickly, avoid obstacles, and collect objects along the way. The monkey stealing the jewelry in *Rio* also gave me the idea for the storyline. In my game, a tourist is enjoying their vacation when a mischievous monkey steals their backpack full of jewelry, forcing them to chase after him through the jungle. </p>
 
@@ -145,3 +151,5 @@ For my final project, I decided to create **Monkey Steal Monkey Move**, an endle
 <p> For the visual style, I wanted everything to feel colourful, playful, and tropical. I used different shades of green for the jungle, with trees surrounding the path, a night sky with stars, and bright colours for the characters and jewelry so that the important objects stand out. I also designed the tourist and monkey myself using shapes and colours in p5.js. I wanted the characters to be recognizable without needing complicated images or animations. I also wanted the overall atmosphere to feel adventurous, almost like a cartoon version of a jungle adventure.</p>
 
 <p> I wanted the music and sound effects to help make the chase feel more exciting, with an adventurous jungle atmosphere that matches the gameplay. Overall, I chose this idea because I wanted to challenge myself to make something more interactive than my previous projects. I got to experiment with arrays, objects, functions, animation, movement, and keyboard interactions while creating a game that has its own story, characters, and visual identity.</p>
+
+### Journal entry 2: Nov 25 2025
