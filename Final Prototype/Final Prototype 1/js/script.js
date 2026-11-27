@@ -1449,20 +1449,19 @@ function loadMusic() {
     console.log("p5.sound isn't loaded, so there will be no music.");
     return;
   }
-  music = loadSound(
-    MUSIC_FILE,
-    () => {
+  loadSound(MUSIC_FILE)
+    .then((sound) => {
+      music = sound;
       musicLoaded = true;
-      music.setVolume(0.4);
+      setMusicVolume();
       // If the player already pressed Start while it was loading
       if (musicWanted) {
         startMusic();
       }
-    },
-    () => {
-      console.log("Couldn't load the music file: " + MUSIC_FILE);
-    }
-  );
+    })
+    .catch((error) => {
+      console.error("Couldn't load the music file: " + MUSIC_FILE, error);
+    });
 }
 
 // Starts the music, looping (browsers only allow this after a click or key press)
@@ -1473,6 +1472,7 @@ function startMusic() {
   }
   if (musicLoaded && !music.isPlaying()) {
     music.loop();
+    music.start();
   }
   setMusicVolume();
 }
@@ -1486,7 +1486,7 @@ function setMusicVolume() {
   if (musicOn) {
     volume = state === "paused" ? 0.12 : 0.4;
   }
-  music.setVolume(volume, 0.2);
+  music.output.gain.setTargetAtTime(volume, getAudioContext().currentTime, 0.2);
 }
 
 function toggleMusic() {
